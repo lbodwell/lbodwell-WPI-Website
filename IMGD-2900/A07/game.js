@@ -124,7 +124,7 @@ let G = (function() {
 	}
 
 	function isGoal(x, y) {
-		return ((x >= 9 && x <= 14) && (y >= 1 && y <= 3));
+		return (level === 1 && (x >= 9 && x <= 14) && (y >= 1 && y <= 3));
 	}
 
 	function isEnemy(x, y) {
