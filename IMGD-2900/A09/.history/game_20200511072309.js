@@ -402,7 +402,7 @@ let G = (function() {
 			loadMap(1);
 			playerPlace(playerX, playerY);
 			PS.statusText("Health: " + playerHealth + "/" + MAX_PLAYER_HEALTH + " | Vaccine Pieces: " + numVaccinePieces + "/" + TOTAL_VACCINE_PIECES);
-			DB.active(true);
+			DB.active(false);
 			DB.init("findcure", complete);
 			PS.timerStart(12, animateEnemies);
 		},
